@@ -1,0 +1,392 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Login - Posehear 👽 </title>
+          <link rel="stylesheet" href="estilos/style.css"/>
+        <link rel="stylesheet" href="estilos/bootstrap-4.4.1.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="font-awesome/css/all.min.css" type="text/css">
+        <link rel="icon" 
+         href="data:image/jpeg;base64,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">
+      
+    </head>
+    <body>
+        <div id="page" class="page-home">
+            <div class="slider">
+            <div class="slide-track">
+                <div class="slide"><strong>POR COMPRAS MAYORES A S/300 DE REGALO TE LLEVAS UN MOUSE PAD 🎁</strong></div>
+                <div class="slide"><strong>POR COMPRAS MAYORES A S/300 DE REGALO TE LLEVAS UN MOUSE PAD 🎁</strong></div>
+                <div class="slide"><strong>POR COMPRAS MAYORES A S/300 DE REGALO TE LLEVAS UN MOUSE PAD 🎁</strong></div>
+                <div class="slide"><strong>POR COMPRAS MAYORES A S/300 DE REGALO TE LLEVAS UN MOUSE PAD 🎁</strong></div>
+                <div class="slide"><strong>POR COMPRAS MAYORES A S/300 DE REGALO TE LLEVAS UN MOUSE PAD 🎁</strong></div>
+                <div class="slide"><strong>POR COMPRAS MAYORES A S/300 DE REGALO TE LLEVAS UN MOUSE PAD 🎁</strong></div>
+            </div>
+        </div>
+        <header>
+                
+            <div class="inner-header" >
+                <div class="container wide" >
+                    <div class="wrap " style="margin-bottom: -20px; margin-top: -5px;">
+                        <div class="header-left">
+                            <div class="menu-bar">
+                                <a href="#0" class="menu-trigger" trigger-button data-target="mobile-menu" style="color: rgb(33, 33, 33); text-decoration: none;"><i class="ri-menu-line"></i></a>
+                            </div>
+                            <div class="men">
+                              
+                                 <ul>
+                                    <li><a href="login.html"  class=" nav-link text-dark "><span></span>
+                                      <i class="ri-user-line"></i></a>
+                                      <ul class="sub-men list-block" style="margin-left: -120px;"><br><br>
+                                         
+                                          <li><a class="" href="srvlUsuario?accion=cerrar" style="text-decoration: none; color: black;">CERRAR SESIÓN</a></li>
+                                       
+                                          
+                                      </ul>
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+                           
+                      
+                        </div>
+                        <div class="header-center">
+                            <nav class="menu" >
+                                <ul>
+                                    <li><a href="index.html"  class=" nav-link text-dark " ><span>Inicio</span></a></li>
+                                              <li><a href="" class=" nav-link text-dark " ><span >Productos</span>
+                                        <i class="ri-arrow-down-s-line"></i></a>
+                                        <ul class="sub-mega">
+                                            <li>
+                                                <div class="container">
+                                                    <div class="wrapper">
+                                                        <div class="mega-content">
+                                                            <div class="dotgrid">
+                                                                <div class="wrapper">
+                                                                    <div class="item">
+                                                                        <div class="dot-image">
+                                                                            
+                                                                            <a href="" class="product-permalink"></a>
+                                                                            <div class="thumbnail">
+                                                                                 <div class="carrusel">
+                                                                                    <ul>
+                                                                                        <li> <img src="https://redragon.es/content/uploads/2021/05/BLAZAR.png" alt="" ></li>
+                                                                                    </ul>
+                                                                                    <ul>
+                                                                                        <li> <img src="https://redragon.es/content/uploads/2021/12/JADE.png" alt="" ></li>
+                                                                                    </ul>
+                                                                                    <ul>
+                                                                                        <li> <img src="https://redragon.es/content/uploads/2021/04/STORM-ELITE.png" alt="" ></li>
+                                                                                    </ul>
+                                                                                    <ul>
+                                                                                        <li> <img src="https://redragon.es/content/uploads/2021/04/SHIVA.png" alt="" ></li>
+                                                                                    </ul>
+                                                                                 </div>
+                                                                            </div>
+                                                                          
+                                                                           
+                                                                        </div>
+                                                                       
+                                                                    </div>   
+                                                          
+                                                                </div>
+                                                                
+                                                                
+                                                            </div>
+                                                            <div class="links">
+                                                                <div class="column">  
+                                                                <div class="list-block">
+                                                                    <h3 class="dot-title"><a href="" style="text-decoration: none; color: black;">Teclados </a></h3>
+                                                                    <ul>
+                                                                    <li ><a class="punto" href="#" style="text-decoration: none;">Asus </a></li>
+                                                                    <li ><a class="punto" href="#" style="text-decoration: none;">Logitech</a></li>
+                                                                    <li ><a class="punto" href="#" style="text-decoration: none;">MSI</a></li>
+                                                                    <li ><a class="punto" href="#" style="text-decoration: none;">Redragon</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="column">  
+                                                                <div class="list-block">
+                                                                    <h3 class="dot-title"><a href="" style="text-decoration: none; color: black;">Ratones </a></h3>
+                                                                    <ul>
+                                                                    <li ><a class="punto" href="#" style="text-decoration: none;">MSI</a></li>
+                                                                    <li ><a class="punto" href="#" style="text-decoration: none;">Logitech </a></li>
+                                                                    <li ><a class="punto" href="#" style="text-decoration: none;">Redragon</a></li>
+                                                                    <li ><a class="punto" href="#" style="text-decoration: none;">VSG</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="column">  
+                                                                <div class="list-block">
+                                                                    <h3 class="dot-title"><a href="" style="text-decoration: none; color: black;">Monitores </a></h3>
+                                                                    <ul class="items-column">
+                                                                    <li ><a class="punto" href="#" style="text-decoration: none;">Acer </a></li>
+                                                                    <li ><a class="punto" href="#" style="text-decoration: none;">Asus </a></li>
+                                                                    <li ><a class="punto" href="#" style="text-decoration: none;">Redragon </a></li>
+                                                                    <li ><a class="punto" href="#" style="text-decoration: none;">Samsung</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="column">  
+                                                                <div class="list-block">
+                                                                    <h3 class="dot-title" ><a href="" style="text-decoration: none; color: black;">Audio</a> </h3>
+                                                                    <div class="items-column">
+                                                                    <ul>
+                                                                    <li ><a class="punto" href="#" style="text-decoration: none;">Astro </a></li>
+                                                                    <li ><a class="punto" href="#" style="text-decoration: none;">Corsair  </a></li>
+                                                                    <li ><a class="punto" href="#" style="text-decoration: none;">Razer </a></li>
+                                                                    <li ><a class="punto" href="#" style="text-decoration: none;">VSG </a></li>
+                                                                    </ul>
+                                                                   </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="column">  
+                                                                <div class="list-block">
+                                                                    <h3 class="dot-title"><a href="" style="text-decoration: none; color: black;">Sillas</a> </h3>
+                                                                    <ul class="items-column">
+                                                                    <li ><a class="punto" href="#" style="text-decoration: none;">Corsair  </a></li>
+                                                                    <li ><a class="punto" href="#" style="text-decoration: none;">Redragon </a></li>
+                                                                    <li ><a class="punto" href="#" style="text-decoration: none;">Xion  </a></li>
+                                                           
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            
+                                        </ul>
+                                    
+                                    </li>
+                                    <li><a href="descuento.html"  class=" nav-link text-dark " ><span>Descuentos</span></a></li>
+                               
+                                </ul>
+                                 <ul>
+                                    <li><a href=""  class=" nav-link text-dark "><span>Redes</span>
+                                      <i class="ri-arrow-down-s-line"></i></a>
+                                      <ul class="sub-menu list-block">
+                                          <li ><a class="punto" href="https://www.tiktok.com/@posehear?_t=8cLPD354cOE&_r=1" target="_blank" style="text-decoration: none;" >TIK TOK</a></li>
+                                          <li><a class="punto" href="https://instagram.com/posehear?igshid=ZGUzMzM3NWJiOQ==" target="_blank" style="text-decoration: none;">INSTAGRAM</a></li>
+                                          <li><a class="punto" href="https://www.facebook.com/profile.php?id=100092601615752&mibextid=ZbWKwL" target="_blank" style="text-decoration: none;">FACEBOOK</a></li>
+                                          
+                                      </ul>
+                                    
+                                    </li>
+                                    <li><a href="nosotros.html"   class=" nav-link text-dark "><span>Nosotros</span></a></li>
+                                    
+                                    <li><a href="" ><span><img style="width: 55px; height: 54px;" src="images/logo_.png"></span></a></li>
+                                </ul>
+                            </nav>
+                            <div class="branding"><a href="#" ><img style="width: 50px; " src="https://media.tenor.com/yy2BS9luJmcAAAAC/among-us.gif"></a></div>
+                        </div>
+                        <div class="header-right">
+                            <div class="list-inline">
+                                
+                                <ul>
+                                    <li><a href="#0"  trigger-button data-target="search-float" class=" nav-link text-dark "><i class="ri-search-line"></i></a></li>
+                                    <li><a href=""  class=" nav-link text-dark "><span class="item-floating"></span><i class="ri-shopping-bag-line"></i></a></li>
+                                </ul>
+                                
+                                
+                            </div>
+                           
+                        </div>
+                          <div id="search-float" class="search-float">
+                  <div class="container wide">
+                    <form action="" class="search">
+                      <i class="ri-search-line"> </i>
+                      <input type="search" class="input" id="" placeholder="Buscar producto">
+                      <i class="ri-close-line" close-button></i>
+
+                    </form>
+                  </div>
+                </div>
+                    </div>
+                </div>
+            
+
+            </div>
+        </header>
+         <!-- reponsive trigger menu -->
+         <div id="mobile-menu" class="mobile-menu" style="z-index: 3000; position: absolute;">
+            <div class="wrap">
+                <a href="" class="close-trigger" close-button>
+      
+                    <i class="ri-close-line" style="text-decoration: none; color: black;" > </i>
+                </a>
+                <div class="main-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" style="text-decoration: none; color: black;"><span>INICIO</span></a></li>
+                            <li class="has-child"><a href=""  style="text-decoration: none; color: black;">
+                                
+                                <span>PRODUCTOS</span>
+                                <span class="child-trigger"><i class="ri-arrow-down-s-line"></i></span>
+      
+      
+                               </a>
+                               <ul class="sub-menu list-block" >
+                                <li><a class="punto" href="#" style="text-decoration: none;">Teclados</a></li>
+                                <li><a class="punto" href="#" style="text-decoration: none;">Ratones</a></li>
+                                <li><a class="punto" href="#" style="text-decoration: none;">Monitores</a></li>
+                                <li><a class="punto" href="#" style="text-decoration: none;">Audio</a></li>
+                                <li><a class="punto" href="#" style="text-decoration: none;">Sillas</a></li>
+                         
+                               </ul>
+                            
+                            </li>
+                            <li><a href="descuento.html"  style="text-decoration: none; color: black;"><span>DESCUENTOS</span></a></li>
+                            <li class="has-child">
+                                
+                                <a href="" style="text-decoration: none; color: black;">
+                                    
+                                    <span>REDES</span>
+                                    <span class="child-trigger"><i class="ri-arrow-down-s-line"></i></span>
+                                </a>
+                                <ul class="sub-menu list-block" >
+                                    <li ><a class="punto" href="https://www.tiktok.com/@posehear?_t=8cLPD354cOE&_r=1" target="_blank" style="text-decoration: none;" >TIK TOK</a></li>
+                                    <li><a class="punto" href="https://instagram.com/posehear?igshid=ZGUzMzM3NWJiOQ==" target="_blank" style="text-decoration: none;">INSTAGRAM</a></li>
+                                    <li><a class="punto" href="https://www.facebook.com/profile.php?id=100092601615752&mibextid=ZbWKwL" target="_blank" style="text-decoration: none;">FACEBOOK</a></li>
+                                   </ul>
+                            
+                            
+                            </li>
+      
+      
+                            <li><a href="nosotros.html"  style="text-decoration: none; color: black;"><span>NOSOTROS</span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="button">
+                        <a href="login.html" class="secondary-btn" style="  text-decoration: none;">Login</a>
+                        <a href="login.html" class="primary-btn " style="  text-decoration: none;">Registrar</a>
+                    </div>
+                </div>
+            </div>
+           </div>
+             <br><br>
+             <!-- login pedido de datos -->
+             
+       
+             <div style="margin: 0 auto; margin-top: 0px;" class="login">
+                 <form action="srvlUsuario?accion=verificar" class="login" method="POST">
+                        <div class="tarjeta">
+                         <h2 class="titulo">Acceder</h2>
+                         <div class="campo">
+                             <label for="correo" class="textologin">Nombre de Usuario o Correo Electrónico</label>
+                           <input type="text" id="correo" name="txtnom">
+                         </div>
+                         <div class="campo">
+                           <label for="contrasena" class="textologin">Contraseña</label>
+                           <input type="password" id="contrasena" name="txtcon">
+                         </div>
+                            <div class="campo">
+                            <input type="checkbox" id="Recordarme"> 
+                            <label for="recuerdame">Recordar</label>
+                          </div>
+                       <input type="submit" name="verificar" value="Verificar" class="boton-acceder">
+                         <div class="enlace-olvidado" >
+                             <a href="#" style="text-decoration: none;">¿Olvidaste la contraseña?</a>
+                         </div>
+                           <div class="social-auth-links text-center">
+      <p>- Verificación Credenciales -</p>
+      <a href="#" class="btn-blue btn-block btn-social btn btn-flat "><i class="fa fa-info"></i> Mensaje: 
+        </a>
+    </div>
+                       </div>
+                    </form>
+                 
+                  <form action="Registrar" class="login">
+                          <div class="tarjeta">
+                            <h2 class="titulo">Registrarse</h2>
+                            
+                             <div class="campo">
+                              <label for="correo" class="textologin">Nombres *</label>
+                              <input type="text" id="correo" name="txtn">
+                            </div>
+                            <div class="campo">
+                              <label for="correo" class="textologin">Dirección de correo electrónico *</label>
+                              <input type="text" id="correo" name="txtnomre">
+                            </div>
+                            <div class="campo">
+                              <label for="contrasena" class="textologin">Contraseña *</label>
+                              <input type="password" id="contrasena"  name="txtconre">
+                               <p>Tus datos personales se utilizarán para procesar tu pedido, también para mejorar tu experiencia en esta web y otros propósitos descritos en nuestra política de privacidad.</p>
+                            </div>
+                             <div class="campo">
+                              <label for="numero" class="textologin">Número de celular *</label>
+                              <input type="text" id="correo" name="txtnum">
+                            </div>
+                            
+                          <input type="submit" name="accion" value="Registrarse" class="boton-acceder">
+
+                          </div>
+                  </form>
+    
+        
+   </div>
+              <br>
+                   <!--footer-->
+          
+                   <div class="conteiner-footer" style="background-color: black; color: white;">
+                    <hr>
+                     <br>
+                     <div class="container text-capitalize text-white p-4">
+                       <div class="row">
+                         <div class="col-6 col-md-8 col-lg-7">
+                           <div class="row text-center">
+                          
+                             <div class="col-sm-6 col-md-4 col-lg-4 col-12">
+                               <ul class="list-unstyled">
+                                 <li > <a href="index.html" style="text-decoration: none; color: white;">Inicio</a> </li>
+                                 <li > <a href="nosotros.html" style="text-decoration: none; color: white;">Quienes somos</a> </li>
+                      
+                               </ul>
+                             </div>
+                             <div class="col-sm-6 col-md-4 col-lg-4 col-12">
+                               <ul class="list-unstyled">
+                    
+                                 <li > <a href="" style="text-decoration: none; color: white;">Contacto</a> </li>
+                                 <li > <a href="" style="text-decoration: none; color: white;">Terminos y Condiciones</a> </li>
+                
+                               </ul>
+                             </div>
+                             <div class="col-sm-6 col-md-4 col-lg-4 col-12">
+                               <ul class="list-unstyled">
+                       
+                                 <li > <a href="" style="text-decoration: none; color: white;">Libro de reclamaciones</a> </li>
+                               </ul>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="col-md-4 col-lg-5 col-6">
+                           <address>
+                             <strong>Posehear</strong><br>
+                             JR. Camana N°1161 "Centro comercial galería Centrolima "<br>
+                             Lima - Perú<br>
+                             Número: (+51) 902873483
+                           </address>
+                           <a href="" ><span><img style="width: 55px; height: 54px;" src="images/logo_white.png"></span></a>
+                         </div>
+                       </div>
+                     </div>
+                     <footer class="text-center">
+                       <div class="container">
+                         <div class="row">
+                           <div class="col-12">
+                             <p>Copyright © PosehearPeru. Todos los derechos reservados.</p>
+                           </div>
+                         </div>
+                       </div>
+                     </footer>
+                   </div>
+                      <script src="js/jquery-3.4.1.min.js"></script>
+              <!-- Include all compiled plugins (below), or include individual files as needed -->
+              <script src="js/popper.min.js"></script>
+              <script src="js/bootstrap-4.4.1.js"></script>
+                      <script src="script2.js"></script>
+                      <div class="overlay" data-overlay></div>
+                      <script src="script.js"></script>
+                      <script src="js/script_search.js"></script>
+              </body>  
+          </html>
